@@ -1,10 +1,10 @@
 #!/bin/sh
 
-sed -i 's|^Manjaro Linux|XIVAStudio, based in BigLinux Manjaro|g' /etc/issue
+sed -i 's|^Manjaro Linux|XIVAStudio, based on BigLinux Manjaro|g' /etc/issue
 
-sed -i 's|^ *\bNAME\b *=.*|NAME="XIVAStudio based in BigLinux Manjaro"|;s|^ *\PRETTY_NAME\b *=.*|PRETTY_NAME="XIVAStudio based in BigLinux Manjaro"|;s|^ *\HOME_URL\b *=.*|HOME_URL="https://www.xivastudio.org"|;s|^ *\DOCUMENTATION_URL\b *=.*|DOCUMENTATION_URL="https://manual.biglinux.com.br"|;s|^ *\SUPPORT_URL\b *=.*|SUPPORT_URL="https://forum.biglinux.com.br"|;s|^ *\BUG_REPORT_URL\b *=.*|BUG_REPORT_URL="https://forum.biglinux.com.br"|;s|LOGO=.*|LOGO="xiva-favicon"|' /usr/lib/os-release
+sed -i 's|^ *\bNAME\b *=.*|NAME="XIVAStudio based on BigLinux Manjaro"|;s|^ *\PRETTY_NAME\b *=.*|PRETTY_NAME="XIVAStudio based on BigLinux Manjaro"|;s|^ *\HOME_URL\b *=.*|HOME_URL="https://www.xivastudio.org"|;s|^ *\DOCUMENTATION_URL\b *=.*|DOCUMENTATION_URL="https://manual.biglinux.com.br"|;s|^ *\SUPPORT_URL\b *=.*|SUPPORT_URL="https://forum.biglinux.com.br"|;s|^ *\BUG_REPORT_URL\b *=.*|BUG_REPORT_URL="https://forum.biglinux.com.br"|;s|LOGO=.*|LOGO="xiva-favicon"|' /usr/lib/os-release
 
-sed -i 's|^ *\bDISTRIB_ID\b *=.*|DISTRIB_ID="XIVAStudio based in BigLinux Manjaro"|g;s|^ *\bDISTRIB_DESCRIPTION\b *=.*|DISTRIB_DESCRIPTION="XIVAStudio"|g' /etc/lsb-release
+sed -i 's|^ *\bDISTRIB_ID\b *=.*|DISTRIB_ID="XIVAStudio based on BigLinux Manjaro"|g;s|^ *\bDISTRIB_DESCRIPTION\b *=.*|DISTRIB_DESCRIPTION="XIVAStudio"|g' /etc/lsb-release
 
 sed -i 's|#GRUB_BTRFS_SUBMENUNAME=.*|GRUB_BTRFS_SUBMENUNAME="Snapshots"|g' /etc/default/grub-btrfs/config
 
