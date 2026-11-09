@@ -21,4 +21,3 @@ install=post.install
 package() {
     cp -r "${srcdir}/$pkgname/usr/" "${pkgdir}/"
 }
-
